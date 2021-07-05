@@ -23,10 +23,9 @@ public class ConnectionIfx {
         Class.forName("com.informix.jdbc.IfxDriver").newInstance();
         
         if( degub ) {
-        	this.conn = DriverManager.getConnection("jdbc:informix-sqli://192.168.1.2:1528/senefelder:INFORMIXSERVER=dsllo", "informix", "PersefoNE9870");
+        	this.conn = DriverManager.getConnection("jdbc:informix-sqli://192.168.1.1:1528/BASEDATOS:INFORMIXSERVER=InstanceName", "UserInformix", "PassInformix");
         } else {
-        	// this.conn = DriverManager.getConnection("jdbc:informix-sqli://192.168.1.2:1528/senefelder:INFORMIXSERVER=dsllo", "informix", "PersefoNE9870");
-        	this.conn = DriverManager.getConnection("jdbc:informix-sqli://192.168.1.201:1528/senefelder:INFORMIXSERVER=servermain;", "intranet", "ags1921");
+        	this.conn = DriverManager.getConnection("jdbc:informix-sqli://192.168.1.2:1528/BASEDATOS:INFORMIXSERVER=InstanceName;", "UserInformix", "PassInformix");
         }
 
     }

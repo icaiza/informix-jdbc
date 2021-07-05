@@ -33,9 +33,6 @@ public class App {
             while( rs.next() ){
             	System.out.println("Datos: " + rs.getString("referencia"));
             }
-            
-            
-            
             rs.close();
             
             
